@@ -115,12 +115,12 @@ public:
 		return iterator(End);
 	}
 
-	reverse_iterator Rbegin()
+	reverse_iterator rbegin()
 	{
 		return reverse_iterator(End->Prev);
 	}
 
-	reverse_iterator Rend()
+	reverse_iterator rend()
 	{
 		return reverse_iterator(Start);
 	}
@@ -235,8 +235,8 @@ int main()
 			NewList.push_back(i);
 		}
 
-		MyList::reverse_iterator rStartIter = NewList.Rbegin();
-		MyList::reverse_iterator rEndIter = NewList.Rend();
+		MyList::reverse_iterator rStartIter = NewList.rbegin();
+		MyList::reverse_iterator rEndIter = NewList.rend();
 
 
 		for (/*std::list<int>::iterator StartIter = NewList.begin()*/
