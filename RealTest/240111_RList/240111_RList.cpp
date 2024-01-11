@@ -117,12 +117,12 @@ public:
 
 	reverse_iterator Rbegin()
 	{
-		return reverse_iterator(End);
+		return reverse_iterator(End->Prev);
 	}
 
 	reverse_iterator Rend()
 	{
-		return reverse_iterator(Start->Next);
+		return reverse_iterator(Start);
 	}
 
 	// End의 Prev에 새로운 데이터를 넣겠다.
